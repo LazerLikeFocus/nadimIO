@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/options_activity2"
+    tools:context=".OptionsActivity">
+
+  <Button
+      android:id="@+id/back_return"
+      android:layout_width="33dp"
+      android:layout_height="33dp"
+      android:background="@drawable/back_return"
+      android:shadowRadius="50"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.042"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.025" />
+
+  <ImageView
+      android:id="@+id/imageView_signOut"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.427"
+      app:srcCompat="@drawable/signout" />
+
+  <ImageView
+      android:id="@+id/imageView_RemoveAcc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="116dp"
+      android:clickable="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/remove_account"
+      android:contentDescription="Removes your acc from nad.im" />
+
+  <ImageView
+      android:id="@+id/imageView_PP"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="80dp"
+      android:clickable="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/privacy_policy"
+      android:contentDescription="Read our Privacy Policy" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/imageView_profilePhoto"
+      android:layout_width="85dp"
+      android:layout_height="85dp"
+      app:civ_border_color="#FFF"
+      app:civ_border_overlay="true"
+      app:civ_border_width="3dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.243"
+      android:background="@drawable/anonymous" />
+
+
+  <Button
+      android:id="@+id/button_developer"
+      android:layout_width="85dp"
+      android:layout_height="85dp"
+      android:background="@android:color/transparent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.242"
+      android:clickable="true"/>
+
+  <TextView
+      android:id="@+id/textView_username"
+      android:layout_width="290dp"
+      android:layout_height="50dp"
+      android:gravity="center"
+      android:text="Anonymous"
+      android:fontFamily="@font/bauhaus_regular"
+      android:textAlignment="gravity"
+      android:textColor="#fff"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.367" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
